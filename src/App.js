@@ -1,14 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.scss';
 import Header from './Header';
+import ModalPopUp from './ModalPopUp';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <p>HELLO</p>
-    </div>
-  );
+
+class App extends Component {
+
+  state = {
+    modalShow: false
+  }
+
+  showPopUp = () => {
+    this.setState({modalShow: !this.state.modalShow});
+  };
+
+  render() {
+    const {modalShow} = this.state;
+    return (
+      <div className="App">
+        <Header showPopUp={this.showPopUp} />
+        <ModalPopUp
+          show={modalShow}
+          onHide={this.showPopUp}
+        />
+      </div>
+    );
+  }
 }
 
 export default App;
