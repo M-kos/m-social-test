@@ -5,12 +5,16 @@ import './ModalPopUp.scss';
 
 import { Modal } from 'react-bootstrap';
 
+import photo1 from './Rectangle 28.10.png';
+import photo2 from './Rectangle 28.11.png';
+import icon from './Group.svg';
+
 class ModalPopUp extends Component {
   state = {
     peoples: [
       {
         id: 0,
-        imgSrc: "https://via.placeholder.com/150",
+        imgSrc: photo1,
         name: "Milan Gladis (Owner)",
         email: "hello@milangladis.com",
         spent: "Spent 3h 34mins",
@@ -18,7 +22,7 @@ class ModalPopUp extends Component {
       },
       {
         id: 1,
-        imgSrc: "https://via.placeholder.com/150",
+        imgSrc: photo2,
         name: "Emma Watson (Owner)",
         email: "emma@watson.com",
         spent: "Spent 3h 34mins",
@@ -26,7 +30,7 @@ class ModalPopUp extends Component {
       },
       {
         id: 2,
-        imgSrc: "https://via.placeholder.com/150",
+        imgSrc: icon,
         name: "Public link",
         email: "",
         spent: "",
@@ -34,7 +38,7 @@ class ModalPopUp extends Component {
       },
       {
         id: 3,
-        imgSrc: "https://via.placeholder.com/150",
+        imgSrc: photo1,
         name: "Milan Gladis (Owner)",
         email: "hello@milangladis.com",
         spent: "Spent 3h 34mins",
@@ -42,7 +46,7 @@ class ModalPopUp extends Component {
       },
       {
         id: 4,
-        imgSrc: "https://via.placeholder.com/150",
+        imgSrc: photo2,
         name: "Emma Watson (Owner)",
         email: "emma@watson.com",
         spent: "Spent 3h 34mins",
@@ -50,7 +54,7 @@ class ModalPopUp extends Component {
       },
       {
         id: 5,
-        imgSrc: "https://via.placeholder.com/150",
+        imgSrc: icon,
         name: "Public link",
         email: "",
         spent: "",
