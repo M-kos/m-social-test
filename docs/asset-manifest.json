@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a35b9671.chunk.css",
+    "main.js": "/static/js/main.809b493e.chunk.js",
+    "main.js.map": "/static/js/main.809b493e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.83375c25.js",
+    "runtime-main.js.map": "/static/js/runtime-main.83375c25.js.map",
+    "static/css/2.b0bb7f2c.chunk.css": "/static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.39c1d65d.chunk.js": "/static/js/2.39c1d65d.chunk.js",
+    "static/js/2.39c1d65d.chunk.js.map": "/static/js/2.39c1d65d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.93ecee4374d9760418ea9bef3909070b.js": "/precache-manifest.93ecee4374d9760418ea9bef3909070b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.b0bb7f2c.chunk.css.map": "/static/css/2.b0bb7f2c.chunk.css.map",
+    "static/css/main.a35b9671.chunk.css.map": "/static/css/main.a35b9671.chunk.css.map",
+    "static/media/Group.svg": "/static/media/Group.07bbf32f.svg",
+    "static/media/ModalPopUp.scss": "/static/media/Union.c5edd435.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.83375c25.js",
+    "static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.39c1d65d.chunk.js",
+    "static/css/main.a35b9671.chunk.css",
+    "static/js/main.809b493e.chunk.js"
+  ]
+}
