@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './ModalPopUp.scss';
+
 import { Modal, Button } from 'react-bootstrap';
 
 function ModalPopUp(props) {
@@ -11,7 +13,7 @@ function ModalPopUp(props) {
       centered
     >
       <Modal.Header closeButton>
-        <h2>Invite people to project</h2>
+        <h2 className="popup-title">Invite people to project</h2>
       </Modal.Header>
       <Modal.Body>
         <div className="input-select">
@@ -67,13 +69,13 @@ function ModalPopUp(props) {
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <p variant="primary">Or share this Project with Public link</p>
-        <select className="selectEdit">
+        <p className="footer-text" variant="primary">Or share this Project with Public link</p>
+        <select className="selectEdit selectEdit--footer">
           <option selected value="edit">Can edit</option>
-          <option value="soma">Some</option>
+          <option value="some">Some</option>
           <option value="any">Any</option>
         </select>
-        <Button variant="success" className="redButton" onClick={() => { }}>Copy link</Button>
+        <button className="btn-popup btn-popup--footer">Copy link</button>
       </Modal.Footer>
     </Modal>
   );
