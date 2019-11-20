@@ -1,0 +1,28 @@
+.inputName {
+    background: url('../ModalPopUp/Union.svg') no-repeat;
+    background-position-x: 10px;
+    background-position-y: center;
+    padding-left: 50px;
+    appearance: none;
+    border: 0;
+    outline: 0;
+}
+
+.selectEdit {
+    background: url('../ModalPopUp/Line.svg') no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+    appearance: none;
+    -webkit-appearance: none;
+    padding-left: 10px;
+    padding-right: 50px;
+    border: 0;
+    outline: 0;
+    border-left: 1px solid gray;
+}
+
+.input-select {
+    border: 1px solid gray;
+    padding: 5px;
+    width: fit-content;
+}

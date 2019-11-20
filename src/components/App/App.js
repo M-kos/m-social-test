@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
-import Header from './Header';
-import ModalPopUp from './ModalPopUp';
+import Header from '../Header/Header';
+import ModalPopUp from '../ModalPopUp/ModalPopUp';
 
 
 class App extends Component {
