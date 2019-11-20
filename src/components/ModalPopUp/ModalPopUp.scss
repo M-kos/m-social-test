@@ -33,6 +33,7 @@
 
   .modal-body {
     padding: 50px 50px 30px 50px;
+    position: relative;
 
     .form-popup {
       display: flex;
@@ -45,6 +46,12 @@
         border-radius: 3px;
         width: fit-content;
         margin-right: 9px;
+
+        &.warning {
+          background-color: rgb(252, 209, 209);
+          border: 1px solid rgb(253, 128, 128);
+          box-shadow: 0 14px 28px rgba(247, 174, 174, 0.25), 0 10px 10px rgba(253, 173, 173, 0.22);
+        }
 
         .input-popup {
           background: url("./Union.svg") no-repeat;
@@ -138,5 +145,18 @@
     border-radius: 2.81458px;
     width: 160px;
     padding: 14px 0;
+  }
+
+  .warning-message {
+    position: absolute;
+    color: #666666;
+    background-color: rgb(255, 184, 184);
+    border: 1px solid rgb(168, 68, 68);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 12px;
+    top: 0;
+    left: 0;
   }
 }
