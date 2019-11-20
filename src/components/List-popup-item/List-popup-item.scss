@@ -1,0 +1,52 @@
+.list-popup-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  .people-photo {
+    width: 30px;
+    border-radius: 3px;
+  }
+
+  .people-description {
+    flex-grow: 2;
+    margin-left: 10px;
+
+    .people-name {
+      margin: 0;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 18px;
+      color: #666666;
+    }
+
+    .people-email {
+      margin: 0;
+      font-size: 12px;
+      line-height: 17px;
+      color: #888888;
+    }
+  }
+
+  .spent-time {
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    color: #bababa;
+    padding-right: 20px;
+  }
+
+  .action-btn-popup {
+    height: 30px;
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: #757575;
+  }
+}

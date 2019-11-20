@@ -31,8 +31,61 @@
     }
   }
 
-  .modal-header {
-    
+  .modal-body {
+    padding: 50px 50px 30px 50px;
+
+    .form-popup {
+      display: flex;
+
+      .input-select-popup {
+        display: flex;
+        flex-grow: 2;
+        border: 1px solid #dbdbdb;
+        padding: 5px;
+        border-radius: 3px;
+        width: fit-content;
+        margin-right: 9px;
+
+        .input-popup {
+          background: url("./Union.svg") no-repeat;
+          background-position-x: 14px;
+          background-position-y: center;
+          padding-left: 40px;
+          appearance: none;
+          border: 0;
+          outline: 0;
+          flex-grow: 2;
+          font-size: 13px;
+          line-height: 18px;
+          color: #666666;
+
+          &::-webkit-input-placeholder {
+            color: #a8a7a7;
+          }
+        }
+      }
+    }
+
+    .list-popup {
+      height: 150px;
+      overflow: auto;
+      margin-top: 15px;
+      padding-right: 20px;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #f7f7f7;
+        border-radius: 3px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        background-color: #d9d9d9;
+      }
+    }
   }
 
   .modal-footer {
@@ -50,58 +103,40 @@
       flex-grow: 2;
     }
 
-    .selectEdit {
+    .select-popup {
       &--footer {
         border: 1px solid #dbdbdb;
         border-radius: 3px;
       }
     }
-
-    .btn-popup {
-      border: 0;
-      font-weight: 600;
-      font-size: 13px;
-      line-height: 18px;
-      text-align: center;
-      color: #ffffff;
-      background: #658cd3;
-      border-radius: 2.81458px;
-      width: 160px;
-      padding: 14px 0;
-      &--footer {
-      }
-    }
   }
-}
 
-.inputName {
-  background: url("./Union.svg") no-repeat;
-  background-position-x: 10px;
-  background-position-y: center;
-  padding-left: 50px;
-  appearance: none;
-  border: 0;
-  outline: 0;
-}
+  .select-popup {
+    background: url("./Line.svg") no-repeat;
+    background-position-x: 82%;
+    background-position-y: center;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 14px 37px 14px 17px;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: right;
+    color: #757575;
+    border: 0;
+    outline: 0;
+    border-left: 1px solid #dbdbdb;
+  }
 
-.selectEdit {
-  background: url("./Line.svg") no-repeat;
-  background-position-x: 82%;
-  background-position-y: center;
-  appearance: none;
-  -webkit-appearance: none;
-  padding: 14px 37px 14px 17px;
-  font-size: 12px;
-  line-height: 17px;
-  text-align: right;
-  color: #757575;
-  border: 0;
-  outline: 0;
-  border-left: 1px solid gray;
-}
-
-.input-select {
-  border: 1px solid gray;
-  padding: 5px;
-  width: fit-content;
+  .btn-popup {
+    border: 0;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    background: #658cd3;
+    border-radius: 2.81458px;
+    width: 160px;
+    padding: 14px 0;
+  }
 }

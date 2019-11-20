@@ -1,10 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+import ListPopupItem from '../List-popup-item/List-popup-item'
 import './ModalPopUp.scss';
 
-import { Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 
 function ModalPopUp(props) {
+  const [peoples, setPeoples] = useState([
+    {
+      id: 0,
+      imgSrc: "https://via.placeholder.com/150",
+      name: "Milan Gladis (Owner)",
+      email: "hello@milangladis.com",
+      spent: "Spent 3h 34mins",
+      actionBtn: "Transfer ownership"
+    },
+    {
+      id: 1,
+      imgSrc: "https://via.placeholder.com/150",
+      name: "Emma Watson (Owner)",
+      email: "emma@watson.com",
+      spent: "Spent 3h 34mins",
+      actionBtn: "Revoke Access"
+    },
+    {
+      id: 2,
+      imgSrc: "https://via.placeholder.com/150",
+      name: "Public link",
+      email: "",
+      spent: "",
+      actionBtn: "Revoke link"
+    },
+    {
+      id: 3,
+      imgSrc: "https://via.placeholder.com/150",
+      name: "Milan Gladis (Owner)",
+      email: "hello@milangladis.com",
+      spent: "Spent 3h 34mins",
+      actionBtn: "Transfer ownership"
+    },
+    {
+      id: 4,
+      imgSrc: "https://via.placeholder.com/150",
+      name: "Emma Watson (Owner)",
+      email: "emma@watson.com",
+      spent: "Spent 3h 34mins",
+      actionBtn: "Revoke Access"
+    },
+    {
+      id: 5,
+      imgSrc: "https://via.placeholder.com/150",
+      name: "Public link",
+      email: "",
+      spent: "",
+      actionBtn: "Revoke link"
+    },
+  ]);
+
   return (
     <Modal
       {...props}
@@ -16,61 +68,26 @@ function ModalPopUp(props) {
         <h2 className="popup-title">Invite people to project</h2>
       </Modal.Header>
       <Modal.Body>
-        <div className="input-select">
-          <input type="text" placeholder="Name or email" className="inputName" />
-          <select className="selectEdit">
-            <option selected value="edit">Can edit</option>
-            <option value="soma">Some</option>
-            <option value="any">Any</option>
-          </select>
+        <div className="form-popup">
+          <div className="input-select-popup">
+            <input type="text" placeholder="Name or email" className="input-popup" />
+            <select className="select-popup">
+              <option selected value="edit">Can edit</option>
+              <option value="some">Some</option>
+              <option value="any">Any</option>
+            </select>
+          </div>
+          <button className="btn-popup btn-popup--body">Invite 1 person</button>
         </div>
-        <button>Invite 1 person</button>
-        <div>
-          <div>
-            <img />
-            <h5>Milan Gladis (Owner)</h5>
-            <p>hello@milangladis.com</p>
-          </div>
-          <span>Spent 3h 34mins</span>
-          <button>Transfer ownership</button>
-          <div>
-            <img />
-            <h5>Emma Watson (Owner)</h5>
-            <p>emma@watson.com</p>
-          </div>
-          <span>Spent 3h 34mins</span>
-          <button>Revoke Access</button>
-          <div>
-            <img />
-            <h5>Public link</h5>
-            <p>http://lor.em/l296gdk6</p>
-          </div>
-          <button>Revoke link</button>
-          <div>
-            <img />
-            <h5>Milan Gladis (Owner)</h5>
-            <p>hello@milangladis.com</p>
-          </div>
-          <span>Spent 3h 34mins</span>
-          <button>Transfer ownership</button>
-          <div>
-            <img />
-            <h5>Emma Watson (Owner)</h5>
-            <p>emma@watson.com</p>
-          </div>
-          <span>Spent 3h 34mins</span>
-          <button>Revoke Access</button>
-          <div>
-            <img />
-            <h5>Public link</h5>
-            <p>http://lor.em/l296gdk6</p>
-          </div>
-          <button>Revoke link</button>
+        <div className="list-popup">
+          {peoples.map(people => {
+            return <ListPopupItem key={people.id} people={people}/>
+          })}
         </div>
       </Modal.Body>
       <Modal.Footer>
         <p className="footer-text" variant="primary">Or share this Project with Public link</p>
-        <select className="selectEdit selectEdit--footer">
+        <select className="select-popup select-popup--footer">
           <option selected value="edit">Can edit</option>
           <option value="some">Some</option>
           <option value="any">Any</option>
